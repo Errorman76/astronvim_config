@@ -20,6 +20,20 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- move lines
+    ["<A-j>"] = { "<cmd>m .+1<cr>==", desc = "Move down" },
+    ["<A-k>"] = { "<cmd>m .-2<cr>==", desc = "Move up" },
+  },
+  i = {
+    -- move lines
+    ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", desc = "Move down" },
+    ["<A-k>"] = { "<esc><cmd>m .-2<cr>==gi", desc = "Move up" },
+  },
+  v = {
+    -- move lines
+    ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move down" },
+    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move up" }, 
   },
   t = {
     -- setting a mapping to false will disable it
