@@ -8,7 +8,7 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+    ["<leader>bn"] = { ":tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
@@ -22,13 +22,13 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- move lines
-    ["<A-j>"] = { "<cmd>m .+1<cr>==", desc = "Move down" },
-    ["<A-k>"] = { "<cmd>m .-2<cr>==", desc = "Move up" },
+    ["<A-j>"] = { ":m .+1<cr>==", desc = "Move down" },
+    ["<A-k>"] = { ":m .-2<cr>==", desc = "Move up" },
   },
   i = {
     -- move lines
-    ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", desc = "Move down" },
-    ["<A-k>"] = { "<esc><cmd>m .-2<cr>==gi", desc = "Move up" },
+    ["<A-j>"] = { "<esc>:m .+1<cr>==gi", desc = "Move down" },
+    ["<A-k>"] = { "<esc>:m .-2<cr>==gi", desc = "Move up" },
   },
   v = {
     -- move lines
