@@ -9,6 +9,7 @@ return {
     wrap = false, -- sets vim.opt.wrap
     tabstop = 4, -- Number of space in a tab
     shiftwidth = 4, -- Number of space inserted for indentation
+    cmdheight = 1, -- temporary fix
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
