@@ -23,6 +23,12 @@ return {
     -- move lines
     ["<A-j>"] = { ":m .+1<cr>==", desc = "Move down" },
     ["<A-k>"] = { ":m .-2<cr>==", desc = "Move up" },
+
+    -- Smart Splits
+    ["<A-Up>"] = { function() require("smart-splits").resize_up() end, desc = "Resize split up" },
+    ["<A-Down>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
+    ["<A-Left>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
+    ["<A-Right>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
   },
   i = {
     -- move lines
