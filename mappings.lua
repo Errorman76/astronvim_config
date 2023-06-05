@@ -29,9 +29,6 @@ return {
     ["<A-Down>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
     ["<A-Left>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
     ["<A-Right>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
-
-    -- dap
-    ["<F5>"] = { function() require("dap.ext.vscode").load_launchjs() require("dap").continue() end }
   },
   i = {
     -- move lines
