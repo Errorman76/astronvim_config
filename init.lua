@@ -69,18 +69,11 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    require("dap.ext.vscode").load_launchjs(nil, {node2 = {"javascript", "html", "css", "json"}})
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    -- dap config
+    require("dap.ext.vscode").type_to_filetypes = {
+      node2 = {"javascript"},
+    }
+    require("dap.ext.vscode").load_launchjs()
+
   end,
 }
