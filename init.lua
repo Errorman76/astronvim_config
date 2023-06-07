@@ -75,5 +75,11 @@ return {
     }
     require("dap.ext.vscode").load_launchjs()
 
+    require("telescope").setup{
+      defaults = {
+        layout_config = {height = 0.95, width = 0.95}
+      }
+    }
+
   end,
 }
