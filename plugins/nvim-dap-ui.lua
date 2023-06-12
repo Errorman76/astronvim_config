@@ -1,6 +1,8 @@
 return {
     "rcarriga/nvim-dap-ui",
     config = function(plugin, opts)
+        require "plugins.configs.nvim-dap-ui"(plugin, opts)
+
         local dapui = require "dapui"
         dapui.setup({
             layouts = { {
@@ -28,7 +30,7 @@ return {
                     elements = { 
                         {
                             id = "repl",
-                            size = 1
+                            size = 1 
                         }, 
                         -- {
                         --     id = "console",
