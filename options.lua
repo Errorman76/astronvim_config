@@ -9,6 +9,7 @@ return {
     wrap = false, -- sets vim.opt.wrap
     tabstop = 4, -- Number of space in a tab
     shiftwidth = 4, -- Number of space inserted for indentation
+    foldcolumn = 0, -- show current indent level
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
