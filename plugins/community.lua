@@ -16,6 +16,9 @@ return {
   -- python
   {import = "astrocommunity.pack.python"},
 
+  -- go
+  {import = "astrocommunity.pack.go"}
+
   -- docker
   {import = "astrocommunity.pack.docker"},
   
