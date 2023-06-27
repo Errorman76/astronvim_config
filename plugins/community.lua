@@ -6,6 +6,7 @@ return {
 
   -- markdown 
   {import = "astrocommunity.pack.markdown"},
+  {import = "astrocommunity.markdown-and-latex.markdown-preview-nvim"},
 
   -- type & javascript
   {import = "astrocommunity.pack.typescript"},
