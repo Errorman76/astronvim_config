@@ -10,6 +10,7 @@ return {
     tabstop = 4, -- Number of space in a tab
     shiftwidth = 4, -- Number of space inserted for indentation
     foldcolumn = "0", -- show current indent level
+    cmdheight = 1, -- cmd line enable
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
