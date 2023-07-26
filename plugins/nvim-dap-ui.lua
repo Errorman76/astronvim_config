@@ -38,7 +38,7 @@ return {
                         -- } 
                     },
                     position = "bottom",
-                    size = 12 
+                    size = 13 
             } },
         })
     end
