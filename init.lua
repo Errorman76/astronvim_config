@@ -70,10 +70,13 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- dap config
-    require("dap.ext.vscode").type_to_filetypes = {
-      node2 = {"javascript"},
-    }
-    require("dap.ext.vscode").load_launchjs()
+    require("dap.ext.vscode").load_launchjs(nil, {
+      ["pwa-node"] = {"javascript"},
+      ["node"] = {"javascript"},
+      ["pwa-chrome"] = {"javascript"},
+      ["chrome"] = {"javascript"},
+      ["node2"] = {"javascript"}
+    })
 
     require("telescope").setup{
       defaults = {
