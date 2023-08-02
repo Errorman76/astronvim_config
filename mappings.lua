@@ -39,6 +39,30 @@ return {
     -- move lines
     ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move down" },
     ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move up" }, 
+
+    -- diff with clipboard
+    ["<leader>!"] = { 
+      function()  
+	      local ftype = vim.api.nvim_eval("&filetype")
+	      vim.cmd("vsplit")
+	      vim.cmd("enew")
+	      vim.cmd("normal! P")
+	      vim.cmd("setlocal buftype=nowrite")
+	      vim.cmd("set filetype="..ftype)
+	      vim.cmd("diffthis")
+	      vim.cmd([[execute "normal! \<C-w>h"]])
+
+        vim.cmd("normal! gv")
+        vim.cmd("'<,'>y")
+	      vim.cmd("vsplit")
+	      vim.cmd("enew")
+	      vim.cmd("normal! P")
+	      vim.cmd("setlocal buftype=nowrite")
+	      vim.cmd("set filetype="..ftype)
+	      vim.cmd("diffthis")
+      end, 
+      desc = "diff with clipboard"
+    }
   },
   t = {
     -- setting a mapping to false will disable it
