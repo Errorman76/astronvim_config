@@ -54,7 +54,6 @@ return {
 
         vim.cmd("normal! gv")
         vim.cmd("'<,'>y")
-	      vim.cmd("vsplit")
 	      vim.cmd("enew")
 	      vim.cmd("normal! P")
 	      vim.cmd("setlocal buftype=nowrite")
