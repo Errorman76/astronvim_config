@@ -1,6 +1,9 @@
 return {
   "AstroNvim/astrocommunity",
 
+  -- lua
+  { import = "astrocommunity.pack.lua" },
+
   -- bash
   { import = "astrocommunity.pack.bash" },
 
