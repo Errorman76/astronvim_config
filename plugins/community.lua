@@ -1,11 +1,11 @@
 return {
   "AstroNvim/astrocommunity",
 
-  -- lua
-  { import = "astrocommunity.pack.lua" },
-
   -- bash
   { import = "astrocommunity.pack.bash" },
+
+  -- docker
+  { import = "astrocommunity.pack.docker" },
 
   -- markdown
   { import = "astrocommunity.pack.markdown" },
