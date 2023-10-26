@@ -12,7 +12,7 @@ return {
 
   -- markdown
   { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
   -- etc
   { import = "astrocommunity.pack.toml" },
