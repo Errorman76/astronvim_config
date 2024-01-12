@@ -38,11 +38,11 @@ return {
   v = {
     -- move lines
     ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move down" },
-    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move up" }, 
+    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move up" },
 
     -- diff with clipboard
-    ["<leader>!"] = { 
-      function()  
+    ["<leader>!"] = {
+      function()
 	      local ftype = vim.api.nvim_eval("&filetype")
 	      vim.cmd("vsplit")
 	      vim.cmd("enew")
@@ -59,7 +59,7 @@ return {
 	      vim.cmd("setlocal buftype=nowrite")
 	      vim.cmd("set filetype="..ftype)
 	      vim.cmd("diffthis")
-      end, 
+      end,
       desc = "diff with clipboard"
     }
   },
